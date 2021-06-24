@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 import os
 from PIL import Image
 import  numpy as np
-model=load_model("Hollybood_update_actore23.h5")
+model=load_model("Hollybood_update_actore23.h5") #my trained model
 def image_classification(hollywood):
     img=load_img(hollywood,target_size=(150,150))
     img=img_to_array(img)/255
